@@ -13,7 +13,7 @@ function App() {
       <Header />
 
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/Esercitazioni_React" element={<Home />} />
         <Route path="/useReducer" element={<EsercizioUseReducer />} />
         <Route path="/useFetch" element={<EsercizioUseFetch />} />
       </Routes>
