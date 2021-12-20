@@ -1,7 +1,9 @@
+import { NavLink } from 'react-router-dom';
 import styles from './Navigation.module.scss';
 
 const menuState = [
-    { label: 'useFetch', link: '/useFetch' },
+    { label: 'useReducer', link: '/useReducer', date: '17-dic-21' },
+    { label: 'useFetch', link: '/useFetch', date: '20-dic-21' }
 ]
 
 const Navigation = () => {
@@ -10,7 +12,7 @@ const Navigation = () => {
                 {menuState.map((item, index) => {
                     return (
                         <li key={index}>
-                            <a href={item.link}>{item.label}</a>
+                            <NavLink className={( {isActive}) => isActive ? styles.active : '' } to={item.link}>{item.label}<span>{item.date}</span></NavLink>
                         </li>
                     )
                 })}
