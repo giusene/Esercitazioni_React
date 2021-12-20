@@ -1,7 +1,7 @@
 {
   "name": "esercitazioni-react",
   "version": "0.1.0",
-  "homepage": "Esercitazioni_React/",
+  "homepage": "https://github.com/giusene/Esercitazioni_React/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
