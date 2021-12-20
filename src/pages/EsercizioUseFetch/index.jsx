@@ -13,7 +13,6 @@ const EsercizioUseFetch = () => {
             const initialData = await get('/products')
             if (response.ok) {
                 setData(initialData);
-                console.log(initialData)
             }
         }
 

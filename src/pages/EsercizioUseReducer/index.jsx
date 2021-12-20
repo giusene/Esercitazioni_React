@@ -18,7 +18,8 @@ const reducer = (state, action) => {
             newData.length = 0;
             return { ...state };
         case 'reset':
-            return { ...state, dataList: [] };
+            state.dataList = [];
+            return { ...state };
         default:
             return state;
     }
