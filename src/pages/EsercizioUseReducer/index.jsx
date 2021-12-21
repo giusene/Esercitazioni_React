@@ -17,6 +17,11 @@ const reducer = (state, action) => {
             state.dataList.push(...newData);
             newData.length = 0;
             return { ...state };
+        case 'init':
+            state.dataList = [];
+            state.dataList.push(...newData);
+            newData.length = 0;
+            return { ...state };
         case 'reset':
             state.dataList = [];
             return { ...state };
@@ -35,8 +40,7 @@ const EsercizioUseReducer = () => {
     }
 
     useEffect(() => {
-        state.dataList = [];
-        pushFunction('add');
+        pushFunction('init');
     }, []);
 
     return (
