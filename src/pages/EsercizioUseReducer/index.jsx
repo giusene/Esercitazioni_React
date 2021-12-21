@@ -17,11 +17,6 @@ const reducer = (state, action) => {
             state.dataList.push(...newData);
             newData.length = 0;
             return { ...state };
-        case 'init':
-            state.dataList = [];
-            state.dataList.push(...newData);
-            newData.length = 0;
-            return { ...state };
         case 'reset':
             state.dataList = [];
             return { ...state };
@@ -40,11 +35,11 @@ const EsercizioUseReducer = () => {
     }
 
     useEffect(() => {
-        pushFunction('init');
+        pushFunction('add');
+        return dispatch({ type: 'reset' });
     }, []);
 
     return (
-
         <div className={styles.main}>
             <p>Questo esercizio utilizza l'Hook useReducer per aggiornare lo State</p>
             <div className={styles.buttonWrapper}>
