@@ -35,6 +35,7 @@ const EsercizioUseReducer = () => {
     }
 
     useEffect(() => {
+        state.dataList = [];
         pushFunction('add');
     }, []);
 
