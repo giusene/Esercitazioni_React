@@ -1,0 +1,18 @@
+.main {
+    font-size: 16px;
+    p {
+        margin-bottom: 20px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        margin: 20px auto;
+        input, button{
+            margin: 5px 0;
+            border-radius: 5px;
+            padding: 5px;
+        }
+    }
+}
